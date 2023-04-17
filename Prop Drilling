@@ -1,0 +1,9 @@
+Props drilling refers to the process of passing data down through multiple layers of nested components as props. This can happen when a parent component needs to pass data down to a child component, which in turn needs to pass that data down to its own child component, and so on.
+
+Parent ===> ChildA ===> ChildB ===> ChildC
+
+Props drilling can become problematic when the data needs to be passed down several levels of nesting, as it can result in a lot of unnecessary code and make it difficult to maintain or modify the code in the future.
+
+To solve this problem, React provides other concepts like context and state management libraries (e.g. Redux) that allow data to be shared between components without needing to pass it down as props through every level of the component hierarchy.
+
+However, props drilling can still be a useful technique for passing data between closely related components that share a common parent component, as it can make the code more straightforward and easier to understand.
